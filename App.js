@@ -7,6 +7,10 @@ import List from './List';
 import HomeCleaning from './src/HomeCleaning'
 import WorkerDetails from './src/WorkerDetails'
 import Sechudle from './src/Sechudle'
+import Booking from './src/Booking';
+import Address from './src/Address';
+import Profile from './src/Profile';
+import EditProfile from './src/EditProfile';
 
 const Stack = createStackNavigator();
 
@@ -19,10 +23,14 @@ const App = () => {
         headerShown: false
       }}>
       {/* <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="List" component={List} /> */}
+      <Stack.Screen name="List" component={List} /> 
       <Stack.Screen name="HomeCleaning" component={HomeCleaning} />
       <Stack.Screen name="WorkerDetails" component={WorkerDetails} />
-      <Stack.Screen name="Sechudle" component={Sechudle} />
+      <Stack.Screen name="Sechudle" component={Sechudle} />*/}
+      <Stack.Screen name="Address" component={Address} />
+      <Stack.Screen name="Booking" component={Booking} />
+      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="EditProfile" component={EditProfile} />
       
     </Stack.Navigator>
     </NavigationContainer>
