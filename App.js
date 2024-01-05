@@ -35,8 +35,8 @@ const App = () => {
       <Stack.Screen name="Booking" component={Booking} />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="EditProfile" component={EditProfile} />*/}
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="OtpScreen" component={OtpScreen} />
+      {/* <Stack.Screen name="Login" component={Login} /> 
+      <Stack.Screen name="OtpScreen" component={OtpScreen} />*/}
       <Stack.Screen name="MyBookings" component={MyBookings} />
       <Stack.Screen name="Chats" component={Chats} />
     </Stack.Navigator>
