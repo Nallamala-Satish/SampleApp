@@ -15,6 +15,9 @@ import Login from './src/Login';
 import OtpScreen from './src/OtpScreen';
 import Chats from './src/Chats';
 import MyBookings from './src/MyBookings';
+import ChatScreen from './src/ChatScreen';
+import BookingDetails from './src/BookingDetails';
+import BookingScreen from './src/BookingScreen';
 
 const Stack = createStackNavigator();
 
@@ -34,11 +37,14 @@ const App = () => {
       <Stack.Screen name="Address" component={Address} />
       <Stack.Screen name="Booking" component={Booking} />
       <Stack.Screen name="Profile" component={Profile} />
-      <Stack.Screen name="EditProfile" component={EditProfile} />*/}
-      {/* <Stack.Screen name="Login" component={Login} /> 
-      <Stack.Screen name="OtpScreen" component={OtpScreen} />*/}
+      <Stack.Screen name="EditProfile" component={EditProfile} />
+      <Stack.Screen name="Login" component={Login} /> 
+      <Stack.Screen name="OtpScreen" component={OtpScreen} />
       <Stack.Screen name="MyBookings" component={MyBookings} />
       <Stack.Screen name="Chats" component={Chats} />
+      <Stack.Screen name="ChatScreen" component={ChatScreen} />*/}
+      <Stack.Screen name="BookingDetails" component={BookingDetails} />
+      <Stack.Screen name="BookingScreen" component={BookingScreen} />
     </Stack.Navigator>
     </NavigationContainer>
   )
