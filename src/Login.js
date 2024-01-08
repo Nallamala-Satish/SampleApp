@@ -4,6 +4,7 @@ import { View, Text,StyleSheet,TouchableOpacity } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import PhoneInput from 'react-native-phone-number-input';
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import SwitchButton from "switch-button-react-native";
 
 const Login = () => {
   const navigation=useNavigation()
@@ -31,7 +32,8 @@ const Login = () => {
       <Text style={{color:'white',margin:10,alignSelf:'center'}}>Your Home Services Expert</Text>
       <View style={{flexDirection:'row',marginTop:10}}>
         <Text style={{color:'white',alignSelf:'center'}}>Login As </Text>
-        <View style={{flexDirection:'row',borderWidth:1,borderColor:'white',borderRadius:30,marginLeft:10}}>
+
+        {/* <View style={{flexDirection:'row',borderWidth:1,borderColor:'white',borderRadius:30,marginLeft:10}}>
          
           <TouchableOpacity  style={[styles.button, activeButton === 1 && styles.activeButton]} 
            onPress={()=>{
@@ -47,7 +49,26 @@ const Login = () => {
              <Text style={{alignSelf:'center',color:'black'}}>User</Text>
           </TouchableOpacity>
         
-        </View>
+        </View> */}
+         <View style={{marginLeft:10}}>
+        <SwitchButton
+        onValueChange={(val) => {console.log(val)}} // this is necessary for this component
+        text1="Worker" // optional: first text in switch button --- default ON
+        text2="User" // optional: second text in switch button --- default OFF
+        switchWidth={200} // optional: switch width --- default 44
+        switchHeight={50} // optional: switch height --- default 100
+        switchdirection="rtl" // optional: switch button direction ( ltr and rtl ) --- default ltr
+        switchBorderRadius={100} // optional: switch border radius --- default oval
+        switchSpeedChange={500} // optional: button change speed --- default 100
+        switchBorderColor="#d4d4d4" // optional: switch border color --- default #d4d4d4
+        switchBackgroundColor=" " // optional: switch background color --- default #fff
+        btnBorderColor="orange" // optional: button border color --- default #00a4b9
+        btnBackgroundColor="orange" // optional: button background color --- default #00bcd4
+        fontColor="black" // optional: text font color --- default #b1b1b1
+        activeFontColor="#fff" // optional: active font color --- default #fff
+      />
+         </View>
+
       </View>
       </View>
       <View>

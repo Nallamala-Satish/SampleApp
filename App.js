@@ -1,12 +1,12 @@
-import { View, Text,StatusBar } from 'react-native'
-import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack';
+import {View, Text, StatusBar} from 'react-native';
+import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
 import Home from './Home';
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import List from './List';
-import HomeCleaning from './src/HomeCleaning'
-import WorkerDetails from './src/WorkerDetails'
-import Sechudle from './src/Sechudle'
+import HomeCleaning from './src/HomeCleaning';
+import WorkerDetails from './src/WorkerDetails';
+import Sechudle from './src/Sechudle';
 import Booking from './src/Booking';
 import Address from './src/Address';
 import Profile from './src/Profile';
@@ -18,18 +18,21 @@ import MyBookings from './src/MyBookings';
 import ChatScreen from './src/ChatScreen';
 import BookingDetails from './src/BookingDetails';
 import BookingScreen from './src/BookingScreen';
+import BookingScreen1 from './src/BookingScreen1';
+import PaymentScreen from './src/PaymentScreen';
+
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    
     <NavigationContainer>
-      <StatusBar backgroundColor={'orange'}/>
-    <Stack.Navigator screenOptions={{
-        headerShown: false
-      }}>
-      {/* <Stack.Screen name="Home" component={Home} />
+      <StatusBar backgroundColor={'orange'} />
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
+        {/* <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="List" component={List} /> 
       <Stack.Screen name="HomeCleaning" component={HomeCleaning} />
       <Stack.Screen name="WorkerDetails" component={WorkerDetails} />
@@ -42,12 +45,14 @@ const App = () => {
       <Stack.Screen name="OtpScreen" component={OtpScreen} />
       <Stack.Screen name="MyBookings" component={MyBookings} />
       <Stack.Screen name="Chats" component={Chats} />
-      <Stack.Screen name="ChatScreen" component={ChatScreen} />*/}
+      <Stack.Screen name="ChatScreen" component={ChatScreen} />
       <Stack.Screen name="BookingDetails" component={BookingDetails} />
       <Stack.Screen name="BookingScreen" component={BookingScreen} />
-    </Stack.Navigator>
+        <Stack.Screen name="BookingScreen1" component={BookingScreen1} />*/}
+        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
 
-export default App
+export default App;
