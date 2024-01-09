@@ -50,8 +50,9 @@ const App = () => {
       <Stack.Screen name="BookingDetails" component={BookingDetails} />
       <Stack.Screen name="BookingScreen" component={BookingScreen} />
         <Stack.Screen name="BookingScreen1" component={BookingScreen1} />
-        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />*/}
-        <Stack.Screen name="Team" component={Team} />
+        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+        <Stack.Screen name="Team" component={Team} />*/}
+         <Stack.Screen name="Login" component={Login} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );

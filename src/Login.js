@@ -5,28 +5,48 @@ import LinearGradient from 'react-native-linear-gradient';
 import PhoneInput from 'react-native-phone-number-input';
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import SwitchButton from "switch-button-react-native";
+import RNPickerSelect from 'react-native-picker-select';
 
 const Login = () => {
   const navigation=useNavigation()
   const [activeButton, setActiveButton] = useState(1);
     const[mobileNumber,setMobileNumber]=useState('')
+    const[language,setLanguage]=useState('')
     const phoneInput = useRef(null);
 
     const handleButtonPress = (buttonNumber) => {
       setActiveButton(buttonNumber);
-    };
+    }; 
+
+    const data=[
+      { label: 'English', value: 'English' },
+      { label: 'Hindi', value: 'Hindi' },
+      { label: 'Telugu', value: 'Telugu' },
+    ]
 
   return (
     <LinearGradient  colors={['orange', 'green']} style={{flex:1}}>
-    <View style={{flexDirection:'row',margin:20,}}> 
+    <View style={{flexDirection:'row',margin:20,justifyContent:'space-between'}}> 
       <AntDesign
     //   onPress={()=>navigation.goBack()}
       name='leftcircle'
       size={35}
       color={'black'}
-      style={{backgroundColor:'white',borderRadius:25}}
+      style={{backgroundColor:'white',borderRadius:50,height:35}}
       />
+     <View style={{borderWidth:0.5,borderColor:'black',backgroundColor:'white',alignSelf:'center',width:150,
+       borderRadius:10,}}>
+
+      <RNPickerSelect
+            placeholder={'Select Language'}
+            value={language}
+            onValueChange={(value) => setLanguage(value)}
+            items={data || []}
+            style={{}}
+        />
+        </View>
       </View>
+      
     <View style={{alignSelf:'center'}}>
       <Text style={{fontWeight:'bold',color:'white',fontSize:25,margin:10,alignSelf:'center'}}>LOGO</Text>
       <Text style={{color:'white',margin:10,alignSelf:'center'}}>Your Home Services Expert</Text>
