@@ -20,6 +20,7 @@ import BookingDetails from './src/BookingDetails';
 import BookingScreen from './src/BookingScreen';
 import BookingScreen1 from './src/BookingScreen1';
 import PaymentScreen from './src/PaymentScreen';
+import Team from './src/Team';
 
 
 const Stack = createStackNavigator();
@@ -48,8 +49,9 @@ const App = () => {
       <Stack.Screen name="ChatScreen" component={ChatScreen} />
       <Stack.Screen name="BookingDetails" component={BookingDetails} />
       <Stack.Screen name="BookingScreen" component={BookingScreen} />
-        <Stack.Screen name="BookingScreen1" component={BookingScreen1} />*/}
-        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+        <Stack.Screen name="BookingScreen1" component={BookingScreen1} />
+        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />*/}
+        <Stack.Screen name="Team" component={Team} />
       </Stack.Navigator>
     </NavigationContainer>
   );
