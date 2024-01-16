@@ -23,6 +23,10 @@ import PaymentScreen from './src/PaymentScreen';
 import Team from './src/Team';
 import Location from './src/Location';
 import SelectLocation from './src/SelectLocation';
+import SignUp from './src/SignUp';
+import SignIn from './src/SignIn';
+import PhoneNumberScreen from './src/PhoneNumberScreen';
+import OtpPage from './src/OtpPage';
 
 
 const Stack = createStackNavigator();
@@ -53,9 +57,13 @@ const App = () => {
       <Stack.Screen name="BookingScreen" component={BookingScreen} />
         <Stack.Screen name="BookingScreen1" component={BookingScreen1} />
         <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
-        <Stack.Screen name="Team" component={Team} />*/}
+        <Stack.Screen name="Team" component={Team} />
          <Stack.Screen name="Location" component={Location} /> 
-         <Stack.Screen name="SelectLocation" component={SelectLocation} /> 
+         <Stack.Screen name="SelectLocation" component={SelectLocation} /> */}
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="PhoneNumberScreen" component={PhoneNumberScreen} />
+         <Stack.Screen name="OtpPage" component={OtpPage} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
