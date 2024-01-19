@@ -29,6 +29,7 @@ import PhoneNumberScreen from './src/PhoneNumberScreen';
 import OtpPage from './src/OtpPage';
 import HomePage from './src/HomePage';
 import HomeScreen from './src/HomeScreen';
+import HomeMain from './src/HomeMain';
 
 
 const Stack = createStackNavigator();
@@ -65,9 +66,10 @@ const App = () => {
         {/* <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="PhoneNumberScreen" component={PhoneNumberScreen} />
-         <Stack.Screen name="OtpPage" component={OtpPage} />  */}
+         <Stack.Screen name="OtpPage" component={OtpPage} /> 
          <Stack.Screen name="HomePage" component={HomePage} />
-         <Stack.Screen name="HomeScreen" component={HomeScreen} /> 
+         <Stack.Screen name="HomeScreen" component={HomeScreen} />  */}
+         <Stack.Screen name="HomeMain" component={HomeMain} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
