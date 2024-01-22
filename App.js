@@ -30,6 +30,7 @@ import OtpPage from './src/OtpPage';
 import HomePage from './src/HomePage';
 import HomeScreen from './src/HomeScreen';
 import HomeMain from './src/HomeMain';
+import BottomTabs from './src/BottomTabs';
 
 
 const Stack = createStackNavigator();
@@ -68,8 +69,9 @@ const App = () => {
         <Stack.Screen name="PhoneNumberScreen" component={PhoneNumberScreen} />
          <Stack.Screen name="OtpPage" component={OtpPage} /> 
          <Stack.Screen name="HomePage" component={HomePage} />
-         <Stack.Screen name="HomeScreen" component={HomeScreen} />  */}
-         <Stack.Screen name="HomeMain" component={HomeMain} /> 
+         <Stack.Screen name="HomeScreen" component={HomeScreen} />  
+         <Stack.Screen name="HomeMain" component={HomeMain} /> */}
+          <Stack.Screen name="BottomTabs" component={BottomTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
